@@ -39,5 +39,32 @@ function calculateRectangleArea(){
     const rectangleArea = width * length;
     console.log(rectangleArea);
 
+    const rectangleAreaTotal = document.getElementById('rectangle-area');
+    rectangleAreaTotal.innerText = rectangleArea;
+
+
+}
+
+function calculateParallelogramArea(){
+// Parallogram Base call and action
+    const parallelogramBaseField = document.getElementById('parallelogram-base');
+    const parallelogramBase = parallelogramBaseField.value;
+    const parallelogramBaseArea = parseFloat(parallelogramBase);
+    console.log(parallelogramBaseArea);
+
+// Parallogram Height call and action
+
+    const parallelogramHeightField = document.getElementById('parallelogram-height');
+    const parallelogramHeight = parallelogramHeightField.value;
+    const parallelogramHeightArea = parseFloat(parallelogramHeight);
+    console.log(parallelogramHeightArea);
+
+// we have to multiple base and height
+   
+   const parallelogramArea = parallelogramBaseArea * parallelogramHeightArea;
+   console.log(parallelogramArea);
+
+   const parallelogramAreaDisplay = document.getElementById('parallelogram-area');
+   parallelogramAreaDisplay.innerText = parallelogramArea;
 
 }

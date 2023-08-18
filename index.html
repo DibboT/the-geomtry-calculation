@@ -26,7 +26,7 @@
                         <!-- Triangle Height -->
                         <input type="text" class="w-24" placeholder="height" id="triangle-height"> <span>cm</span>
                     </p>
-                    <p>Area: <span id="triangle-area"></span></p>
+                    <p class="text-lg font-semibold">Area: <span id="triangle-area"></span></p>
                       <div class="card-actions">
                         <button onclick="calculateTriangleArea()" class="btn btn-primary w-full mt-10 ">Calculate</button>
                       </div>
@@ -38,24 +38,32 @@
                     <div class="card-body text-center">
                       <h2 class="card-title text-center">Rectangle</h2>
                       <p>Area (A) = w x l</p>
+    
                       <!-- Rectangle Width -->
                       <p><input type="text" class="w-24" placeholder="width" id="rectangle-width"> <span>cm</span>
                         <!-- Rectangle Length -->
                         <input type="text" class="w-24" placeholder="height" id="rectangle-length"> <span>cm</span>
                     </p>
+                    <p class="text-lg font-semibold">Area: <span id="rectangle-area"></span></p>
                       <div class="card-actions">
                         <button onclick="calculateRectangleArea()" class="btn btn-primary w-full mt-10 ">Calculate</button>
                       </div>
                     </div>
                   </div>
-                  <!-- Third Card -->
+                  <!-- Parallelogram Card -->
                   <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/parallelogram.png" alt="Shoes" /></figure>
-                    <div class="card-body">
+                    <figure><img src="/parallelogram.png" alt="" /></figure>
+                    <div class="card-body text-center">
                       <h2 class="card-title">Parallelogram</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p>Area (A) = b x h</p>
+                      <!-- Parallelogram Width -->
+                      <p><input type="text" class="w-24" placeholder="base" id="parallelogram-base"> <span>cm</span>
+                        <!-- Parallelogram Length -->
+                        <input type="text" class="w-24" placeholder="height" id="parallelogram-height"> <span>cm</span>
+                    </p>
+                    <p class="text-lg font-semibold">Area: <span id="parallelogram-area"></span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateParallelogramArea()"  class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
