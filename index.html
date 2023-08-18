@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+    <header>
+        <h1 class="text-5xl text-center mb-20 font-semibold"> The Geomtry Shape</h1>
+    </header>
+    <section>
+        <div class="flex">
+
+            <!-- Shape container -->
+            <div class="flex-1 grid grid-cols-3">
+                <!-- First Card-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/triangle.png" alt="" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title ">Triangle</h2>
+                      <p>Area (A) = 0.5 x b x h</p>
+                      <p><input type="text" class="w-24" placeholder="base" id="triangle-base"> <span>cm</span>
+                        <!-- Triangle Height -->
+                        <input type="text" class="w-24" placeholder="height" id="triangle-height"> <span>cm</span>
+                    </p>
+                    <p>Area: <span id="triangle-area"></span></p>
+                      <div class="card-actions">
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full mt-10 ">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Second Card-->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/rectangle.png" alt="" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title text-center">Rectangle</h2>
+                      <p>Area (A) = w x l</p>
+                      <!-- Rectangle Width -->
+                      <p><input type="text" class="w-24" placeholder="width" id="rectangle-width"> <span>cm</span>
+                        <!-- Rectangle Length -->
+                        <input type="text" class="w-24" placeholder="height" id="rectangle-length"> <span>cm</span>
+                    </p>
+                      <div class="card-actions">
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full mt-10 ">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Third Card -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Calculator -->
+            <div>
+                <h1 class="text-4xl font-semibold">Area Calculator</h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="/area-calculator.js"></script>
+    
+</body>
+</html>
